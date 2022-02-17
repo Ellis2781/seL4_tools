@@ -5,10 +5,10 @@
 #
 
 cmake_minimum_required(VERSION 3.7.2)
-# Include our common helpers
+# Adjusting the default musllibc path
 list(
     APPEND
-        CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/helpers/ ${CMAKE_SOURCE_DIR}/projects/musllibc
+        CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/helpers/ ${CMAKE_SOURCE_DIR}/libc
 )
 
 include(check_arch_compiler)
